@@ -16,3 +16,6 @@
 /grid_columns.png
 *.tox.bak
 .DS_Store
+
+# local-only inspiration images
+/reference/
