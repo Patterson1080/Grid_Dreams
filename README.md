@@ -18,11 +18,15 @@ renders the full 2160²). Tested on build 2025.32280.
 
 1. **Clone** this repo, e.g. `git clone https://github.com/Patterson1080/Grid_Dreams C:/Grid_Dreams`
 2. **Open TouchDesigner** (a new empty project is fine).
-3. **Build the network**: open a Textport (`Alt+T`) or a Text DAT, paste the
-   contents of [`build_grid_dreams.py`](build_grid_dreams.py), set `SRC` at the
-   top to your clone path (e.g. `C:/Grid_Dreams`), then run `build()`.
-   → a self-contained `baseCOMP` **`GridGlitch`** appears under `/project1`; its
-   `null1` / `out1` viewer is the final image.
+3. **Get the `GridGlitch` COMP into your project** — two ways:
+   - **Easiest:** drag **[`GridGlitch.tox`](GridGlitch.tox)** from the clone into the
+     network (or RMB ▸ *Import Component*). Shaders are embedded — nothing else to load.
+   - **From source:** open a Textport (`Alt+T`), paste [`build_grid_dreams.py`](build_grid_dreams.py),
+     set `SRC` to your clone path (e.g. `C:/Grid_Dreams`), and run `build()`. Use this
+     if you've edited a `.frag`/`.py` and want to rebuild from the text files.
+
+   Either way a self-contained `baseCOMP` **`GridGlitch`** appears; its `null1`/`out1`
+   viewer is the final image.
 4. **Feed the live inputs:**
    - `GridGlitch/src3`, `src4`, `src5` are **NDI In** TOPs — pick your NDI senders
      (from your other TouchDesigner instance). **`src4` is the Diffusion source**
