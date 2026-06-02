@@ -1,0 +1,18 @@
+# scratch / inspection renders kept only in the working dir (not the repo).
+# Anchored to repo root so the curated copies in previews/ stay tracked.
+/atlas.png
+/label_zoom.png
+/preview.png
+/preview_a.png
+/preview_b.png
+/preview_diffusion.png
+/preview_frozen.png
+/preview_full.png
+/preview_grid.png
+/preview_labels.png
+/preview_stage.png
+/grid_spiral.png
+/grid_bsp.png
+/grid_columns.png
+*.tox.bak
+.DS_Store
